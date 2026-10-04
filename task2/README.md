@@ -141,3 +141,42 @@ python3 task2/experiment.py
 - [CPython `Objects/listobject.c`](https://github.com/python/cpython/blob/main/Objects/listobject.c), `list_resize()` growth formula
 - [CPython 3.13 `Include/cpython/tupleobject.h`](https://github.com/python/cpython/blob/3.13/Include/cpython/tupleobject.h), tuple header before 3.14
 
+## Appendix: Raw output
+```
+Experiment 1
+tuple (1,2,3): 56
+list  [1,2,3]: 72
+
+Experiment 2
+empty tuple: 32
+empty list:  40
+
+Experiment 3
+tuple len=0: 32
+tuple len=1: 40
+tuple len=2: 48
+tuple len=3: 56
+tuple len=4: 64
+tuple len=5: 72
+tuple len=6: 80
+tuple len=7: 88
+tuple len=8: 96
+tuple len=9: 104
+tuple len=10: 112
+
+Experiment 4
+list len=0: 40
+list len=1: 72
+list len=5: 104
+list len=9: 168
+list len=17: 232
+
+Experiment 5
+tuple: __sizeof__ = 56  getsizeof = 72
+list:  __sizeof__ = 232  getsizeof = 248
+
+Experiment 6
+literal [1,2,3]:  72
+list((1,2,3)):  72
+comprehension:  72
+```
