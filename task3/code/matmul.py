@@ -29,6 +29,12 @@ def main():
         c = a @ b
         best = min(best, time.perf_counter() - start)
 
+    if max(n, m, p) <= 5:
+        np.set_printoptions(precision=2)
+        print("A =\n", a)
+        print("B =\n", b)
+        print("C = A @ B =\n", c)
+
     print(f"Result shape: {c.shape[0]}x{c.shape[1]}")
     print(f"Best of {RUNS} runs: {best * 1000:.3f} ms")
 
