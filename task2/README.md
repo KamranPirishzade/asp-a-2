@@ -140,6 +140,7 @@ python3 task2/experiment.py
 - [CPython issue gh-131525](https://github.com/python/cpython/issues/131525), tuple hash caching in Python 3.14
 - [CPython `Objects/listobject.c`](https://github.com/python/cpython/blob/main/Objects/listobject.c), `list_resize()` growth formula
 - [CPython 3.13 `Include/cpython/tupleobject.h`](https://github.com/python/cpython/blob/3.13/Include/cpython/tupleobject.h), tuple header before 3.14
+- Lecture slides: Basics of Programming Languages, CSCI 6221 (Tuple Types), based on Sebesta, *Concepts of Programming Languages*, ch. 6
 
 ## Appendix: Raw output
 ```
