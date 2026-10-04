@@ -30,3 +30,8 @@ for i in range(20):
 print("\nExperiment 5")
 print("tuple: __sizeof__ =", tpl.__sizeof__(), " getsizeof =", sys.getsizeof(tpl))
 print("list:  __sizeof__ =", lst.__sizeof__(), " getsizeof =", sys.getsizeof(lst))
+
+print("\nExperiment 6")
+print("literal [1,2,3]: ", [1, 2, 3].__sizeof__())
+print("list((1,2,3)): ", list((1, 2, 3)).__sizeof__())
+print("comprehension: ", [x for x in range(1, 4)].__sizeof__()) 
